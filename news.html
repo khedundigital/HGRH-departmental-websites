@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - Harry Gwala Regional Hospital Paediatrics</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal-600': '#0E7490',
+                        'teal-500': '#14B8A6',
+                        'green-500': '#10B981',
+                        'yellow-300': '#F7E9A6',
+                        'coral-300': '#F7B3A6',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Nunito', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation Header -->
+    <nav-header></nav-header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-teal-600 to-teal-500 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl">
+                <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">News & Updates</h1>
+                <p class="text-xl text-teal-50">Stay informed about the latest news, events, and updates from our paediatrics department</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="py-12">
+        <div class="container mx-auto px-4">
+            
+            <!-- Featured Article -->
+            <section class="mb-12">
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-2/3 p-8">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium mr-3">Featured</span>
+                                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">Important</span>
+                            </div>
+                            <h2 class="font-serif text-3xl font-bold mb-4 text-teal-600">
+                                Updated Visiting Hours for Paediatric Ward Effective Immediately
+                            </h2>
+                            <div class="flex items-center text-gray-500 text-sm mb-4">
+                                <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+                                <time>November 28, 2024</time>
+                                <span class="mx-2">•</span>
+                                <i data-feather="user" class="w-4 h-4 mr-2"></i>
+                                <span>Hospital Administration</span>
+                            </div>
+                            <p class="text-gray-600 mb-6">
+                                Due to increased patient load and infection control measures, Harry Gwala Regional Hospital has revised the visiting hours for the paediatric ward. The new schedule aims to balance patient rest with family access while ensuring safety for all.
+                            </p>
+                            <div class="bg-red-50 p-4 rounded-lg mb-6">
+                                <h3 class="font-semibold text-red-700 mb-2">New Visiting Hours:</h3>
+                                <ul class="text-gray-700 space-y-1">
+                                    <li><strong>Monday - Friday:</strong> 15:00 - 16:00 and 19:00 - 20:00</li>
+                                    <li><strong>Weekends & Public Holidays:</strong> 15:00 - 16:00</li>
+                                    <li><strong>ICU/High Care:</strong> By special arrangement only</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="inline-flex items-center text-teal-600 font-semibold hover:text-teal-700">
+                                Read Full Announcement <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                        <div class="md:w-1/3 bg-gradient-to-br from-red-500 to-red-600 p-8 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i data-feather="clock" class="w-16 h-16 mx-auto mb-4"></i>
+                                <p class="text-2xl font-bold">Visiting Hours</p>
+                                <p class="text-red-100">Updated</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Category Filter -->
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <button class="category-btn px-4 py-2 bg-teal-600 text-white rounded-full font-medium hover:bg-teal-700 transition-all" data-category="all">
+                    All News
+                </button>
+                <button class="category-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition-all" data-category="announcement">
+                    Announcements
+                </button>
+                <button class="category-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition-all" data-category="health">
+                    Health Tips
+                </button>
+                <button class="category-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition-all" data-category="event">
+                    Events
+                </button>
+                <button class="category-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition-all" data-category="research">
+                    Research
+                </button>
+            </div>
+
+            <!-- News Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- News Item 1 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="health">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-3">
+                            <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+                            <time>December 1, 2024</time>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">
+                            Winter Health Tips for Children: Keeping Your Little Ones Healthy
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            As winter approaches, pediatricians at Harry Gwala Regional Hospital share essential tips to keep children healthy during the cold and flu season...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-blue-600 font-medium">Health Tips</span>
+                            <a href="#" class="text-teal-600 hover:text-teal-700">
+                                <i data-feather="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Item 2 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="event">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-3">
+                            <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+                            <time>November 25, 2024</time>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">
+                            New Asthma Education Clinic Launches Every Thursday
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Harry Gwala Regional Hospital is pleased to announce the launch of a dedicated Asthma Education Clinic, running every Thursday from 10:00 AM...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-green-600 font-medium">Event</span>
+                            <a href="#" class="text-teal-600 hover:text-teal-700">
+                                <i data-feather="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Item 3 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="announcement">
+                    <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-3">
+                            <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+                            <time>November 20, 2024</time>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">
+                            Power Outage Schedule: Planned Maintenance This Weekend
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            The hospital will experience planned power outages this weekend for essential maintenance. Backup generators will ensure critical services continue...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-yellow-600 font-medium">Announcement</span>
+                            <a href="#" class="text-teal-600 hover:text-teal-700">
+                                <i data-feather="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Item 4 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="research">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-3">
+                            <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+                            <time>November 15, 2024</time>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">
+                            Groundbreaking Research: New Treatment Protocol for Severe Malnutrition
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Our paediatric department's research team publishes promising results from a three-year study on improving treatment outcomes for severe acute malnutrition...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-purple-600 font-medium">Research</span>
+                            <a href="#" class="text-teal-600 hover:text-teal-700">
+                                <i data-feather="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Item 5 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="health">
+                    <div class="bg-gradient-to-br from-pink-500 to-pink-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-3">
+                            <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+                            <time>November 10, 2024</time>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">
+                            World Pneumonia Day: Raising Awareness About Childhood Pneumonia
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            On World Pneumonia Day, our department emphasizes the importance of vaccination and early recognition of pneumonia symptoms in children...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-pink-600 font-medium">Health Tips</span>
+                            <a href="#" class="text-teal-600 hover:text-teal-700">
+                                <i data-feather="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Item 6 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="event">
+                    <div class="bg-gradient-to-br from-teal-500 to-teal-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-3">
+                            <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+                            <time>November 5, 2024</time>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">
+                            Children's Day Celebration at Harry Gwala Hospital
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Our paediatric ward celebrated Children's Day with special activities, gifts, and entertainment for our young patients and their families...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-teal-600 font-medium">Event</span>
+                            <a href="#" class="text-teal-600 hover:text-teal-700">
+                                <i data-feather="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <section class="mt-12 bg-gradient-to-r from-teal-600 to-green-500 text-white rounded-lg p-8">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="font-serif text-3xl font-bold mb-4">Stay Updated</h2>
+                    <p class="text-teal-100 mb-6">
+                        Subscribe to our newsletter to receive the latest news, health tips, and updates from our paediatrics department.
+                    </p>
+                    <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                        <input type="email" placeholder="Enter your email address" 
+                            class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                        <button type="submit" 
+                            class="bg-yellow-300 text-teal-700 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="text-xs text-teal-100 mt-4">
+                        We respect your privacy. Unsubscribe at any time. Your information is protected under POPIA.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Archive Section -->
+            <section class="mt-12">
+                <h2 class="font-serif text-2xl font-bold mb-6 text-teal-600 text-center">Archive</h2>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div>
+                            <h3 class="font-semibold text-lg mb-3 text-gray-700">2024</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">December</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">November</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">October</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">September</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg mb-3 text-gray-700">2023</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">December</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">November</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">October</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">September</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg mb-3 text-gray-700">Categories</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">Announcements (15)</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">Health Tips (23)</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">Events (12)</a></li>
+                                <li><a href="#" class="text-teal-600 hover:text-teal-700">Research (8)</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg mb-3 text-gray-700">Popular Tags</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">vaccination</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">asthma</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">nutrition</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">emergency</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <!-- Components -->
+    <script src="components/nav-header.js"></script>
+    <script src="components/site-footer.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Category Filter JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const newsItems = document.querySelectorAll('[data-category]');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    
+                    // Update button styles
+                    categoryBtns.forEach(b => {
+                        b.classList.remove('bg-teal-600', 'text-white');
+                        b.classList.add('bg-gray-200', 'text-gray-700');
+                    });
+                    this.classList.remove('bg-gray-200', 'text-gray-700');
+                    this.classList.add('bg-teal-600', 'text-white');
+                    
+                    // Filter items
+                    newsItems.forEach(item => {
+                        if (category === 'all' || item.dataset.category === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    
+    <script>feather.replace();</script>
+</body>
+</html>

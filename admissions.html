@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Harry Gwala Regional Hospital Paediatrics</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal-600': '#0E7490',
+                        'teal-500': '#14B8A6',
+                        'green-500': '#10B981',
+                        'yellow-300': '#F7E9A6',
+                        'coral-300': '#F7B3A6',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Nunito', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation Header -->
+    <nav-header></nav-header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-teal-600 to-teal-500 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl">
+                <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">Paediatric Admissions</h1>
+                <p class="text-xl text-teal-50">Everything you need to know about admitting your child to our care</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Alert -->
+    <div class="bg-red-600 text-white py-3 px-4 text-center">
+        <p class="text-sm font-medium">🚨 For Medical Emergencies: Proceed directly to our Emergency Department or Call +27 33 395 4703</p>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="py-12">
+        <div class="container mx-auto px-4">
+            
+            <!-- Admission Process Overview -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-teal-600">Admission Process</h2>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-2xl font-bold text-teal-600">1</span>
+                        </div>
+                        <h3 class="font-semibold mb-2">Referral</h3>
+                        <p class="text-sm text-gray-600">Get a referral from your doctor or come through emergency</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-2xl font-bold text-teal-600">2</span>
+                        </div>
+                        <h3 class="font-semibold mb-2">Assessment</h3>
+                        <p class="text-sm text-gray-600">Medical evaluation to determine need for admission</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-2xl font-bold text-teal-600">3</span>
+                        </div>
+                        <h3 class="font-semibold mb-2">Registration</h3>
+                        <p class="text-sm text-gray-600">Complete admission forms and provide documentation</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-2xl font-bold text-teal-600">4</span>
+                        </div>
+                        <h3 class="font-semibold mb-2">Admission</h3>
+                        <p class="text-sm text-gray-600">Child is admitted to the appropriate ward for care</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Admission Criteria -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                
+                <!-- When to Admit -->
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="font-serif text-2xl font-bold mb-6 text-teal-600">When Admission is Required</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold mb-1">Severe Illness</h3>
+                                <p class="text-gray-600 text-sm">High fever, dehydration, severe respiratory distress, or other acute conditions requiring 24/7 monitoring</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold mb-1">Surgical Procedures</h3>
+                                <p class="text-gray-600 text-sm">Children requiring surgery or post-operative care</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold mb-1">IV Treatment</h3>
+                                <p class="text-gray-600 text-sm">Conditions requiring intravenous medications or fluids</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold mb-1">Observation</h3>
+                                <p class="text-gray-600 text-sm">Children requiring close medical observation and monitoring</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold mb-1">Chronic Conditions</h3>
+                                <p class="text-gray-600 text-sm">Acute exacerbations of chronic illnesses like asthma or diabetes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Referral Guidelines -->
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="font-serif text-2xl font-bold mb-6 text-teal-600">Referral Guidelines</h2>
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mb-4">
+                        <h3 class="font-semibold text-blue-700 mb-2">For Healthcare Professionals</h3>
+                        <p class="text-sm text-gray-700">When referring patients to our paediatric department:</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-gray-50 p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-1">Emergency Referrals</h4>
+                            <p class="text-xs text-gray-600">Call +27 33 395 4703 to speak with the paediatrician on duty</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-1">Elective Admissions</h4>
+                            <p class="text-xs text-gray-600">Fax referral to: [Fax Number] with patient details and clinical summary</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-1">Required Information</h4>
+                            <ul class="text-xs text-gray-600 ml-4">
+                                <li>• Patient demographic details</li>
+                                <li>• Clinical history and examination findings</li>
+                                <li>• Investigations results</li>
+                                <li>• Reason for referral</li>
+                                <li>• Urgency level</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-1">Transfer Arrangements</h4>
+                            <p class="text-xs text-gray-600">Discuss with receiving doctor before transfer. Ensure patient stability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Required Documents -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-2xl font-bold mb-6 text-teal-600">Required Documents</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-semibold text-lg mb-4 text-teal-700">Essential Documents</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="file-text" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-600">Child's birth certificate or ID document</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="file-text" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-600">Parent/guardian ID document</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="file-text" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-600">Referral letter from referring doctor</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="file-text" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-600">Medical aid card (if applicable)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="file-text" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-600">Previous medical records</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-4 text-teal-700">Additional Information</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="info" class="w-5 h-5 text-blue-500 mr-3"></i>
+                                <span class="text-gray-600">List of current medications</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="info" class="w-5 h-5 text-blue-500 mr-3"></i>
+                                <span class="text-gray-600">Known allergies</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="info" class="w-5 h-5 text-blue-500 mr-3"></i>
+                                <span class="text-gray-600">Immunization record (Road to Health card)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="info" class="w-5 h-5 text-blue-500 mr-3"></i>
+                                <span class="text-gray-600">Contact details of emergency person</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="info" class="w-5 h-5 text-blue-500 mr-3"></i>
+                                <span class="text-gray-600">Proof of income (for indigent patients)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What to Bring -->
+            <section class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-8 mb-8">
+                <h2 class="font-serif text-2xl font-bold mb-6 text-yellow-800">What to Bring for Your Child</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-3xl mb-3">👕</div>
+                        <h3 class="font-semibold mb-2 text-yellow-800">Clothing</h3>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• Comfortable day clothes</li>
+                            <li>• Pajamas/sleepwear</li>
+                            <li>• Underwear</li>
+                            <li>• Warm jacket/sweater</li>
+                            <li>• Slippers/socks</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-3xl mb-3">🧴</div>
+                        <h3 class="font-semibold mb-2 text-yellow-800">Toiletries</h3>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• Toothbrush & toothpaste</li>
+                            <li>• Soap & facecloth</li>
+                            <li>• Diapers (if needed)</li>
+                            <li>• Wet wipes</li>
+                            <li>• Special creams/lotions</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-3xl mb-3">🧸</div>
+                        <h3 class="font-semibold mb-2 text-yellow-800">Comfort Items</h3>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• Favorite toy or blanket</li>
+                            <li>• Books or coloring materials</li>
+                            <li>• Tablet/device for entertainment</li>
+                            <li>• Photos from home</li>
+                            <li>• Bottle/cup (if needed)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Admission Times -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-2xl font-bold mb-6 text-teal-600">Admission Times</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="font-semibold text-lg mb-3 text-green-700">Elective Admissions</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center">
+                                <i data-feather="clock" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span><strong>Monday - Friday:</strong> 08:00 - 16:00</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="clock" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span><strong>Weekends:</strong> By prior arrangement</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="info" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-sm">Please arrive early to complete paperwork</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <h3 class="font-semibold text-lg mb-3 text-red-700">Emergency Admissions</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center">
+                                <i data-feather="clock" class="w-5 h-5 text-red-500 mr-2"></i>
+                                <span><strong>24 Hours, 7 Days</strong></span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="alert-circle" class="w-5 h-5 text-red-500 mr-2"></i>
+                                <span class="text-sm">Through Emergency Department</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="phone" class="w-5 h-5 text-red-500 mr-2"></i>
+                                <span class="text-sm">Emergency: +27 33 395 4703</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Financial Information -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-2xl font-bold mb-6 text-teal-600">Financial Information</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <div class="text-2xl mb-3">🏥</div>
+                        <h3 class="font-semibold mb-2 text-blue-700">Public Patients</h3>
+                        <p class="text-sm text-gray-700 mb-2">Services charged according to income level and government tariff scales.</p>
+                        <p class="text-xs text-gray-600">Bring proof of income for assessment.</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <div class="text-2xl mb-3">💳</div>
+                        <h3 class="font-semibold mb-2 text-green-700">Medical Aid</h3>
+                        <p class="text-sm text-gray-700 mb-2">Most major medical aids accepted. Pre-authorization may be required.</p>
+                        <p class="text-xs text-gray-600">Bring medical aid card and authorization.</p>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <div class="text-2xl mb-3">💵</div>
+                        <h3 class="font-semibold mb-2 text-yellow-700">Private Patients</h3>
+                        <p class="text-sm text-gray-700 mb-2">Payment required at time of service. Competitive rates available.</p>
+                        <p class="text-xs text-gray-600">Payment plans can be arranged.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parent Guidelines -->
+            <section class="bg-gradient-to-r from-teal-600 to-green-500 text-white rounded-lg p-8">
+                <h2 class="font-serif text-2xl font-bold mb-6">Important Guidelines for Parents</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-semibold text-lg mb-3 text-yellow-300">During Admission</h3>
+                        <ul class="space-y-2 text-teal-50">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Stay with your child as much as possible</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Participate in your child's care plan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Ask questions about treatment and medications</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Inform staff of any changes in your child's condition</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-3 text-yellow-300">Visiting Rules</h3>
+                        <ul class="space-y-2 text-teal-50">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Follow designated visiting hours strictly</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Limited visitors (2 per patient)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>No visitors with colds or infectious diseases</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Children under 12 may need special permission</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="bg-white rounded-lg shadow-md p-8 text-center">
+                <h2 class="font-serif text-2xl font-bold mb-4 text-teal-600">Need More Information?</h2>
+                <p class="text-gray-600 mb-6">Our admissions team is here to help you through the process</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="tel:+27333954703" class="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-all">
+                        <i data-feather="phone" class="inline w-4 h-4 mr-2"></i>
+                        Call Admissions: +27 33 395 4703
+                    </a>
+                    <a href="contact.html" class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all">
+                        <i data-feather="map-pin" class="inline w-4 h-4 mr-2"></i>
+                        Get Directions
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <!-- Components -->
+    <script src="components/nav-header.js"></script>
+    <script src="components/site-footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

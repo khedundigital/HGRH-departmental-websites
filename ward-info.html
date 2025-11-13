@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ward Information - Harry Gwala Regional Hospital Paediatrics</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal-600': '#0E7490',
+                        'teal-500': '#14B8A6',
+                        'green-500': '#10B981',
+                        'yellow-300': '#F7E9A6',
+                        'coral-300': '#F7B3A6',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Nunito', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation Header -->
+    <nav-header></nav-header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-teal-600 to-teal-500 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl">
+                <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">Ward Information</h1>
+                <p class="text-xl text-teal-50">Everything you need to know about visiting and staying in our paediatric wards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="py-12">
+        <div class="container mx-auto px-4">
+            
+            <!-- Quick Info Cards -->
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gradient-to-br from-teal-500 to-teal-600 text-white rounded-lg p-6">
+                    <div class="text-3xl mb-3">🕐</div>
+                    <h3 class="font-bold text-lg mb-2">Visiting Hours</h3>
+                    <p class="text-teal-100">Mon-Fri: 15:00-16:00, 19:00-20:00</p>
+                    <p class="text-teal-100">Weekends: 15:00-16:00</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-500 to-green-600 text-white rounded-lg p-6">
+                    <div class="text-3xl mb-3">📞</div>
+                    <h3 class="font-bold text-lg mb-2">Ward Contact</h3>
+                    <p class="text-green-100">+27 33 395 4703</p>
+                    <p class="text-green-100">24/7 Emergency Line</p>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-400 to-yellow-500 text-white rounded-lg p-6">
+                    <div class="text-3xl mb-3">🏥</div>
+                    <h3 class="font-bold text-lg mb-2">Location</h3>
+                    <p class="text-yellow-100">Main Building</p>
+                    <p class="text-yellow-100">Level 2 - Paediatrics Wing</p>
+                </div>
+            </div>
+
+            <!-- Visiting Hours Details -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-teal-600">Visiting Hours & Rules</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-semibold text-xl mb-4 text-teal-700">Regular Visiting Hours</h3>
+                        <div class="space-y-3">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium">Monday - Friday</span>
+                                    <span class="text-teal-600 font-semibold">15:00 - 16:00 & 19:00 - 20:00</span>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium">Saturday & Sunday</span>
+                                    <span class="text-teal-600 font-semibold">15:00 - 16:00</span>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium">Public Holidays</span>
+                                    <span class="text-teal-600 font-semibold">15:00 - 16:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-xl mb-4 text-teal-700">Special Units</h3>
+                        <div class="space-y-3">
+                            <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                                <h4 class="font-semibold text-red-700 mb-1">ICU / High Care</h4>
+                                <p class="text-sm text-gray-600">By special arrangement with nursing staff only. Limited visiting due to patient condition.</p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <h4 class="font-semibold text-blue-700 mb-1">Neonatal Unit</h4>
+                                <p class="text-sm text-gray-600">Parents may visit anytime with staff permission. Limited to parents only.</p>
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                                <h4 class="font-semibold text-yellow-700 mb-1">Isolation Rooms</h4>
+                                <p class="text-sm text-gray-600">Restricted visiting due to infection control. Please check with nursing staff.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visiting Rules -->
+                <div class="mt-8 bg-teal-50 p-6 rounded-lg">
+                    <h3 class="font-semibold text-lg mb-4 text-teal-700">Important Visiting Rules</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">Maximum 2 visitors per patient at a time</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">No visitors under 12 years old</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">No visitors with colds or infectious diseases</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">Hand sanitization required on entry/exit</span>
+                            </li>
+                        </ul>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">No food or drinks from outside</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">No flowers or plants in patient areas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">Mobile phones on silent mode</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">Respect quiet hours (22:00 - 06:00)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ward Facilities -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-teal-600">Ward Facilities</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg">
+                        <div class="text-4xl mb-3">🛏️</div>
+                        <h3 class="font-semibold text-lg mb-2">Patient Rooms</h3>
+                        <p class="text-gray-600 text-sm">Multi-bed rooms with privacy curtains. Bedside lockers for personal items.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-lg">
+                        <div class="text-4xl mb-3">👨‍👩‍👧‍👦</div>
+                        <h3 class="font-semibold text-lg mb-2">Parent Accommodation</h3>
+                        <p class="text-gray-600 text-sm">Limited facilities available for parents of critically ill children.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg">
+                        <div class="text-4xl mb-3">🍽️</div>
+                        <h3 class="font-semibold text-lg mb-2">Dining Area</h3>
+                        <p class="text-gray-600 text-sm">Family dining area for parents to have meals during visiting hours.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg">
+                        <div class="text-4xl mb-3">🚿</div>
+                        <h3 class="font-semibold text-lg mb-2">Bathroom Facilities</h3>
+                        <p class="text-gray-600 text-sm">Clean, accessible bathrooms with baby changing facilities.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gradient-to-br from-red-50 to-red-100 rounded-lg">
+                        <div class="text-4xl mb-3">🎮</div>
+                        <h3 class="font-semibold text-lg mb-2">Play Area</h3>
+                        <p class="text-gray-600 text-sm">Supervised play area with age-appropriate toys and activities.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
+                        <div class="text-4xl mb-3">📺</div>
+                        <h3 class="font-semibold text-lg mb-2">Entertainment</h3>
+                        <p class="text-gray-600 text-sm">TV in common areas, books, and educational materials for children.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parent Guide -->
+            <section class="bg-gradient-to-br from-green-500 to-teal-500 text-white rounded-lg p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-white">Guide for Parents & Guardians</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-xl mb-4 text-yellow-300">During Your Child's Stay</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i data-feather="user" class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Stay Involved</h4>
+                                    <p class="text-green-100 text-sm">Participate in your child's care routine and ask questions about treatment plans.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="book-open" class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Keep Records</h4>
+                                    <p class="text-green-100 text-sm">Maintain a diary of your child's progress and any questions for doctors.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="users" class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Build Relationships</h4>
+                                    <p class="text-green-100 text-sm">Get to know the nursing team caring for your child.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-bold text-xl mb-4 text-yellow-300">What You Can Do</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i data-feather="heart" class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Emotional Support</h4>
+                                    <p class="text-green-100 text-sm">Provide comfort, reassurance, and normalcy for your child.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="shield" class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Advocate</h4>
+                                    <p class="text-green-100 text-sm">Speak up if you have concerns about your child's care.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="home" class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Prepare for Discharge</h4>
+                                    <p class="text-green-100 text-sm">Learn about home care instructions and follow-up appointments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meals & Nutrition -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-teal-600">Meals & Nutrition</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-semibold text-xl mb-4 text-teal-700">Patient Meals</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-700"><strong>Breakfast:</strong> 07:30</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-700"><strong>Lunch:</strong> 12:30</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-700"><strong>Supper:</strong> 17:30</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="w-5 h-5 text-teal-500 mr-3"></i>
+                                <span class="text-gray-700"><strong>Snacks:</strong> Available between meals</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 p-4 rounded-lg mt-4">
+                            <h4 class="font-semibold text-yellow-700 mb-2">Special Dietary Needs</h4>
+                            <p class="text-sm text-gray-600">We accommodate allergies, religious requirements, and medical dietary needs. Please inform nursing staff.</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-xl mb-4 text-teal-700">For Parents</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Parent Meals</h4>
+                            <p class="text-sm text-gray-600 mb-3">Meals are available for purchase from the hospital cafeteria:</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Breakfast: 06:30 - 09:00</li>
+                                <li>• Lunch: 11:30 - 14:00</li>
+                                <li>• Supper: 17:00 - 19:00</li>
+                            </ul>
+                            <p class="text-sm text-gray-600 mt-3">Vending machines available 24/7 for drinks and snacks.</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mt-4">
+                            <h4 class="font-semibold text-blue-700 mb-2">Breastfeeding Support</h4>
+                            <p class="text-sm text-gray-600">Breastfeeding mothers have access to private areas and refrigeration for expressed milk. Lactation consultants available on request.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Safety & Security -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-teal-600">Safety & Security</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-teal-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-3 text-teal-700">Infection Control</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Hand sanitization stations throughout the ward</li>
+                            <li>• Regular cleaning and disinfection</li>
+                            <li>• Isolation protocols for infectious cases</li>
+                            <li>• Staff trained in infection prevention</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-3 text-green-700">Security Measures</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• 24/7 security personnel on duty</li>
+                            <li>• Controlled access to patient areas</li>
+                            <li>• CCTV monitoring</li>
+                            <li>• Safe storage for valuables</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-3 text-yellow-700">Patient Safety</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Bed rails and safety measures</li>
+                            <li>• Regular nursing rounds</li>
+                            <li>• Medication safety protocols</li>
+                            <li>• Fall prevention strategies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-l-4 border-purple-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-3 text-purple-700">Emergency Procedures</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Fire evacuation plans posted</li>
+                            <li>• Regular emergency drills</li>
+                            <li>• Emergency call buttons in rooms</li>
+                            <li>• Trained emergency response team</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact & Support -->
+            <section class="bg-gradient-to-r from-teal-600 to-green-500 text-white rounded-lg p-8 text-center">
+                <h2 class="font-serif text-2xl font-bold mb-4">Need Help During Your Stay?</h2>
+                <p class="mb-6">Our team is here to support you and your child</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-3xl mb-2">👩‍⚕️</div>
+                        <h3 class="font-semibold mb-1">Nursing Station</h3>
+                        <p class="text-teal-100 text-sm">Call extension from bedside phone or press call button</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl mb-2">👨‍⚕️</div>
+                        <h3 class="font-semibold mb-1">Doctor on Call</h3>
+                        <p class="text-teal-100 text-sm">Available 24/7 through nursing staff</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl mb-2">💬</div>
+                        <h3 class="font-semibold mb-1">Social Worker</h3>
+                        <p class="text-teal-100 text-sm">Available for emotional and practical support</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <!-- Components -->
+    <script src="components/nav-header.js"></script>
+    <script src="components/site-footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

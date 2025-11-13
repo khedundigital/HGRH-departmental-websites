@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinics - Harry Gwala Regional Hospital Paediatrics</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal-600': '#0E7490',
+                        'teal-500': '#14B8A6',
+                        'green-500': '#10B981',
+                        'yellow-300': '#F7E9A6',
+                        'coral-300': '#F7B3A6',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Nunito', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation Header -->
+    <nav-header></nav-header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-teal-600 to-teal-500 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl">
+                <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">Outpatient Clinics</h1>
+                <p class="text-xl text-teal-50">Specialized paediatric clinics to meet your child's healthcare needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="py-12">
+        <div class="container mx-auto px-4">
+            
+            <!-- Clinic Schedule Overview -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-teal-600">Weekly Clinic Schedule</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-50">
+                                <th class="border border-gray-200 px-4 py-3 text-left font-semibold text-gray-700">Day</th>
+                                <th class="border border-gray-200 px-4 py-3 text-left font-semibold text-gray-700">Time</th>
+                                <th class="border border-gray-200 px-4 py-3 text-left font-semibold text-gray-700">Clinic</th>
+                                <th class="border border-gray-200 px-4 py-3 text-left font-semibold text-gray-700">Doctor</th>
+                                <th class="border border-gray-200 px-4 py-3 text-left font-semibold text-gray-700">Requirements</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-200 px-4 py-3 font-medium">Monday</td>
+                                <td class="border border-gray-200 px-4 py-3">08:00 - 16:00</td>
+                                <td class="border border-gray-200 px-4 py-3">
+                                    <span class="font-semibold text-teal-600">General Paediatrics</span>
+                                </td>
+                                <td class="border border-gray-200 px-4 py-3">Dr. Smith</td>
+                                <td class="border border-gray-200 px-4 py-3 text-sm">Referral letter</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-200 px-4 py-3 font-medium">Tuesday</td>
+                                <td class="border border-gray-200 px-4 py-3">09:00 - 12:00</td>
+                                <td class="border border-gray-200 px-4 py-3">
+                                    <span class="font-semibold text-green-600">Growth & Development</span>
+                                </td>
+                                <td class="border border-gray-200 px-4 py-3">Dr. Johnson</td>
+                                <td class="border border-gray-200 px-4 py-3 text-sm">Road to Health card</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-200 px-4 py-3 font-medium">Wednesday</td>
+                                <td class="border border-gray-200 px-4 py-3">08:00 - 16:00</td>
+                                <td class="border border-gray-200 px-4 py-3">
+                                    <span class="font-semibold text-purple-600">Specialist Clinics</span>
+                                </td>
+                                <td class="border border-gray-200 px-4 py-3">Various</td>
+                                <td class="border border-gray-200 px-4 py-3 text-sm">Specialist referral</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-yellow-50">
+                                <td class="border border-gray-200 px-4 py-3 font-medium">Thursday</td>
+                                <td class="border border-gray-200 px-4 py-3">10:00 - 14:00</td>
+                                <td class="border border-gray-200 px-4 py-3">
+                                    <span class="font-semibold text-yellow-600">🌟 Asthma Education</span>
+                                </td>
+                                <td class="border border-gray-200 px-4 py-3">Dr. Williams</td>
+                                <td class="border border-gray-200 px-4 py-3 text-sm">Previous diagnosis</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-200 px-4 py-3 font-medium">Friday</td>
+                                <td class="border border-gray-200 px-4 py-3">08:00 - 16:00</td>
+                                <td class="border border-gray-200 px-4 py-3">
+                                    <span class="font-semibold text-blue-600">Immunization</span>
+                                </td>
+                                <td class="border border-gray-200 px-4 py-3">Nursing Staff</td>
+                                <td class="border border-gray-200 px-4 py-3 text-sm">Road to Health card</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">* Schedule may change due to doctor availability or public holidays. Please call to confirm.</p>
+            </section>
+
+            <!-- Individual Clinic Details -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                
+                <!-- General Paediatrics -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-gradient-to-r from-teal-500 to-teal-600 p-6">
+                        <div class="text-white">
+                            <div class="flex items-center mb-2">
+                                <i data-feather="heart" class="w-8 h-8 mr-3"></i>
+                                <h3 class="text-2xl font-bold">General Paediatrics</h3>
+                            </div>
+                            <p class="text-teal-100">Monday, 08:00 - 16:00</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg mb-3 text-teal-700">Services Provided</h4>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Routine health check-ups</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Common childhood illnesses</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Vaccinations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Health education</span>
+                            </li>
+                        </ul>
+                        <div class="bg-gray-50 p-4 rounded">
+                            <h5 class="font-semibold mb-2">What to Bring:</h5>
+                            <ul class="text-sm text-gray-600">
+                                <li>• Child's Road to Health card</li>
+                                <li>• ID documents</li>
+                                <li>• Previous medical records</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asthma Education -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 p-6">
+                        <div class="text-white">
+                            <div class="flex items-center mb-2">
+                                <i data-feather="wind" class="w-8 h-8 mr-3"></i>
+                                <h3 class="text-2xl font-bold">Asthma Education Clinic</h3>
+                            </div>
+                            <p class="text-yellow-100">Thursday, 10:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg mb-3 text-yellow-700">Services Provided</h4>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Asthma action plans</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Inhaler technique training</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Trigger identification</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Emergency management</span>
+                            </li>
+                        </ul>
+                        <div class="bg-yellow-50 p-4 rounded">
+                            <h5 class="font-semibold mb-2">What to Bring:</h5>
+                            <ul class="text-sm text-gray-600">
+                                <li>• Current inhalers/spacers</li>
+                                <li>• Previous asthma records</li>
+                                <li>• List of medications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Growth & Development -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 p-6">
+                        <div class="text-white">
+                            <div class="flex items-center mb-2">
+                                <i data-feather="trending-up" class="w-8 h-8 mr-3"></i>
+                                <h3 class="text-2xl font-bold">Growth & Development</h3>
+                            </div>
+                            <p class="text-green-100">Tuesday, 09:00 - 12:00</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg mb-3 text-green-700">Services Provided</h4>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Growth monitoring</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Developmental assessments</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Nutritional counseling</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Early intervention</span>
+                            </li>
+                        </ul>
+                        <div class="bg-green-50 p-4 rounded">
+                            <h5 class="font-semibold mb-2">Age Groups:</h5>
+                            <ul class="text-sm text-gray-600">
+                                <li>• Newborns (0-28 days)</li>
+                                <li>• Infants (1-12 months)</li>
+                                <li>• Toddlers (1-3 years)</li>
+                                <li>• Pre-school (3-5 years)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Immunization Clinic -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6">
+                        <div class="text-white">
+                            <div class="flex items-center mb-2">
+                                <i data-feather="shield" class="w-8 h-8 mr-3"></i>
+                                <h3 class="text-2xl font-bold">Immunization Clinic</h3>
+                            </div>
+                            <p class="text-blue-100">Friday, 08:00 - 16:00</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg mb-3 text-blue-700">Services Provided</h4>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">EPI schedule vaccinations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Catch-up immunizations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">School entry vaccines</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Vaccine counseling</span>
+                            </li>
+                        </ul>
+                        <div class="bg-blue-50 p-4 rounded">
+                            <h5 class="font-semibold mb-2">Important:</h5>
+                            <p class="text-sm text-gray-600">Bring child's Road to Health card for all immunization visits. Delay if child has fever over 38°C.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appointment Information -->
+            <section class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-purple-700">Making an Appointment</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-semibold text-xl mb-4 text-purple-600">How to Book</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="w-6 h-6 text-purple-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">By Phone</h4>
+                                    <p class="text-gray-600">Call +27 33 395 4703 during business hours (08:00 - 16:00)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="user" class="w-6 h-6 text-purple-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">In Person</h4>
+                                    <p class="text-gray-600">Visit the paediatric reception desk Monday to Friday</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="edit" class="w-6 h-6 text-purple-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold">Referral</h4>
+                                    <p class="text-gray-600">Get a referral from your doctor or clinic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-xl mb-4 text-purple-600">What You Need</h3>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                                    <span class="text-gray-700">Child's Road to Health card</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                                    <span class="text-gray-700">Parent/guardian ID</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                                    <span class="text-gray-700">Medical aid card (if applicable)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                                    <span class="text-gray-700">Referral letter (for specialist clinics)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                                    <span class="text-gray-700">Previous medical records</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Special Programs -->
+            <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="font-serif text-3xl font-bold mb-6 text-teal-600">Special Programs & Initiatives</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg">
+                        <div class="text-4xl mb-3">👶</div>
+                        <h3 class="font-semibold text-lg mb-2 text-teal-700">Well Baby Program</h3>
+                        <p class="text-gray-600 text-sm">Comprehensive health monitoring for infants under 1 year, including growth tracking and developmental screening.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-lg">
+                        <div class="text-4xl mb-3">🎒</div>
+                        <h3 class="font-semibold text-lg mb-2 text-green-700">School Health Program</h3>
+                        <p class="text-gray-600 text-sm">Annual health assessments for school-aged children, including vision, hearing, and immunization checks.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg">
+                        <div class="text-4xl mb-3">🍎</div>
+                        <h3 class="font-semibold text-lg mb-2 text-yellow-700">Nutrition Clinic</h3>
+                        <p class="text-gray-600 text-sm">Monthly clinic for children with nutrition concerns, malnutrition, or feeding difficulties.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Important Information -->
+            <section class="bg-gradient-to-r from-teal-600 to-green-500 text-white rounded-lg p-8">
+                <h2 class="font-serif text-2xl font-bold mb-6 text-white">Important Information</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-yellow-300">Before Your Visit</h3>
+                        <ul class="space-y-2 text-teal-50">
+                            <li>• Arrive 15 minutes early for registration</li>
+                            <li>• Bring all required documents</li>
+                            <li>• Bring list of questions for the doctor</li>
+                            <li>• Don't come if child has contagious illness</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-yellow-300">During Your Visit</h3>
+                        <ul class="space-y-2 text-teal-50">
+                            <li>• Follow clinic procedures and wait times</li>
+                            <li>• Ask questions about your child's health</li>
+                            <li>• Take notes on doctor's instructions</li>
+                            <li>• Schedule follow-up appointments before leaving</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 bg-white bg-opacity-20 p-4 rounded-lg">
+                    <p class="text-center text-white">
+                        <strong>Emergency Contact:</strong> +27 33 395 4703 | 
+                        <strong>Reception:</strong> +27 33 395 4700
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <!-- Components -->
+    <script src="components/nav-header.js"></script>
+    <script src="components/site-footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
