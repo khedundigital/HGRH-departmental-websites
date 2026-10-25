@@ -2,13 +2,16 @@ id,route,content,status,source_or_owner,reviewer_needed,publish_rule
 C-001,all,unofficial demonstration warning,approved_for_demo,user instruction,owner,always visible
 C-002,all,hospital name and official verification link,source-backed,official KZN Health page,hospital communications,link to source
 C-003,paediatrics/services.html,broad paediatric service category,source-backed,official KZN Health services list,department lead,do not infer scope
-C-004,paediatrics/admissions.html,admissions process specifics,unverified,prototype only,admissions lead,placeholder only
+C-004,paediatrics/admissions.html,historical admissions sequence and document examples,unverified historical example,prototype archive,admissions lead,show only with prominent historical and verification labels
 C-005,paediatrics/preparation.html,visit preparation prompts,unreviewed generic,project drafting,clinical and admissions reviewers,verify before operational use
 C-006,paediatrics/faqs.html,operational FAQ answers,unverified,prototype only,department lead,explain verification requirement
-C-007,all,isiZulu patient content,not supplied,none,qualified translator plus clinical reviewer,do not display as complete
+C-007,zu/*,isiZulu draft demonstration,AI-assisted unreviewed draft,English pages and project drafting,qualified translator plus departmental clinical reviewer,label on every route and do not use operationally
 C-008,obgyn,department content,awaiting questionnaire,owner,department lead,do not publish
 C-009,paediatrics/contact.html,hospital-wide address and map search,source-backed,official KZN Health hospital page,hospital communications,verify changes periodically; no entrance claim
 C-010,paediatrics/contact.html,main hospital and PRO telephone numbers,source-backed,official KZN Health hospital page,hospital communications,do not relabel as paediatrics booking or emergency
 C-011,paediatrics/contact.html,general hospital visiting hours,source-backed with scope caveat,official KZN Health hospital page,paediatrics ward lead,confirm ward-specific policy before use
-C-012,paediatrics/services.html,earlier prototype clinic examples,unverified concepts,prototype archive,paediatrics lead,visibly unconfirmed; no schedule room doctor or referral claim
+C-012,paediatrics/services.html,earlier prototype clinic table and schedule,unverified historical example,prototype archive,paediatrics lead,visibly unconfirmed; never present as current timetable
 C-013,paediatrics/education.html,WHO resource links,source-backed links,WHO publication pages,clinical education lead,link to publisher; review editions and audience
+C-014,paediatrics/programmes.html,premature baby mum support and caregiver learning proposals,proposal only,owner request,paediatrics and parent representatives,no enrolment or schedule claim
+C-015,paediatrics/forms.html,SASSA supporting PDFs and grant guidance,source-backed links,SASSA and South African Government pages,social work lead,distinguish supporting PDFs from offline application forms
+C-016,site/documents,original printable caregiver questions and grant preparation checklist,unreviewed nonclinical prompts,project drafting,clinical and social work reviewers,printable guides are not official forms or treatment advice

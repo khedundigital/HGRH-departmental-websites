@@ -23,6 +23,12 @@
     border: 2px solid black;
     padding: 0.4rem;
   }
+  .translation-banner {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.3rem;
+  }
   .container {
     width: 100%;
   }
@@ -43,6 +49,9 @@
     display: block;
   }
   .card,
+  .feature-card,
+  .source-alert,
+  .feature-band,
   .note,
   .band,
   .steps li,
@@ -58,6 +67,14 @@
   .band a {
     color: black;
   }
+  .feature-band h2,
+  .feature-band p,
+  .feature-band a {
+    color: black;
+  }
+  .table-wrap { overflow: visible; }
+  .clinic-table { min-width: 0; font-size: 9pt; }
+  .clinic-table th, .clinic-table td { padding: .3rem; }
   a {
     color: black;
     text-decoration: underline;

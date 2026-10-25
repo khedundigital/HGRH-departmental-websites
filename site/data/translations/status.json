@@ -3,10 +3,10 @@
   "languages": {
     "en": { "interface": "available", "hospitalApproval": "not granted" },
     "zu": {
-      "interface": "not published",
-      "translationReview": "not started",
-      "clinicalReview": "not started"
+      "interface": "draft demonstration published",
+      "translationReview": "pending qualified review",
+      "clinicalReview": "pending departmental review"
     }
   },
-  "policy": "Only publish a language when every route and safety warning is translated and approved by a qualified translator and departmental clinical reviewer."
+  "policy": "Draft isiZulu pages are labelled as AI-assisted demonstration copy on every route. They are not an approved patient resource. Obtain qualified translation and departmental clinical review before operational use."
 }

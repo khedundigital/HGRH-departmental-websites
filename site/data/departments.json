@@ -9,10 +9,14 @@
         "admissions.html",
         "services.html",
         "preparation.html",
+        "programmes.html",
         "faqs.html",
         "education.html",
+        "forms.html",
         "contact.html"
-      ]
+      ],
+      "languageRoutes": ["en", "zu"],
+      "translationStatus": "isiZulu draft demonstration; qualified review pending"
     },
     {
       "slug": "obgyn",
