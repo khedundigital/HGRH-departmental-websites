@@ -1,0 +1,3 @@
+# Prospective research concept — not an approved protocol
+
+Question: can a task-led, accessible departmental information prototype help caregivers find a safe admissions/FAQ pathway with less uncertainty than the earlier prototype? Proposed future methods, subject to ethics and hospital approvals: expert content review, accessibility audit, and moderated task-based usability sessions using fictional scenarios. Potential measures include task completion, navigation errors and comprehension of the unofficial status. No participants have been recruited, no findings exist, and no patient or participant data may be collected through this site. Consent, data governance, sampling and analysis plans require formal review before research begins.

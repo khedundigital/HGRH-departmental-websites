@@ -1,0 +1,73 @@
+@media print {
+  body {
+    background: white;
+    color: black;
+    font:
+      11pt/1.45 Georgia,
+      serif;
+  }
+  .site-header,
+  .site-nav,
+  .utility-strip,
+  .actions,
+  .hero-art,
+  .side-panel,
+  .site-footer,
+  .skip-link,
+  .no-print {
+    display: none !important;
+  }
+  .demo-banner {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    padding: 0.4rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .hero,
+  .page-intro,
+  .section {
+    background: white;
+    padding: 0.6rem 0;
+  }
+  h1,
+  h2,
+  h3 {
+    color: black;
+    break-after: avoid;
+  }
+  .grid,
+  .content-layout {
+    display: block;
+  }
+  .card,
+  .note,
+  .band,
+  .steps li,
+  .faq-list details {
+    box-shadow: none;
+    color: black;
+    border: 1px solid #777;
+    margin: 0.4rem 0;
+    break-inside: avoid;
+  }
+  .band h2,
+  .band p,
+  .band a {
+    color: black;
+  }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    overflow-wrap: anywhere;
+  }
+  .faq-list details:not([open]) > *:not(summary) {
+    display: block !important;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "projectStatus": "unofficial demonstration",
+  "departments": [
+    {
+      "slug": "paediatrics",
+      "status": "demonstration",
+      "routes": [
+        "index.html",
+        "admissions.html",
+        "services.html",
+        "preparation.html",
+        "faqs.html"
+      ]
+    },
+    {
+      "slug": "obgyn",
+      "status": "deferred pending questionnaire",
+      "routes": []
+    }
+  ]
+}

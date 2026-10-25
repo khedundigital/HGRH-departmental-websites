@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 480" role="img" aria-labelledby="t d">
+<title id="t">Caregiver and child illustration</title><desc id="d">Original illustration of a caregiver standing beside a child, with gentle leaf and sun shapes.</desc>
+<rect x="34" y="32" width="452" height="416" rx="70" fill="#cde8dc"/>
+<circle cx="390" cy="118" r="53" fill="#f2b96b"/>
+<path d="M46 326c66-48 118-24 163-12 72 21 160-26 273 18v116H34V338z" fill="#a4d0c1"/>
+<path d="M120 354c-30-81-14-146 38-155 53-9 81 41 73 108l-10 107H119z" fill="#143f44"/>
+<path d="M158 193c-24-8-38-36-31-65 8-34 39-55 74-45 31 9 47 42 38 72-9 34-47 51-81 38z" fill="#432f2e"/>
+<ellipse cx="183" cy="158" rx="39" ry="48" fill="#b97958"/>
+<path d="M145 151c3-29 11-56 45-59 29-2 42 20 43 41-16-7-29-18-35-28-15 26-31 40-53 46z" fill="#432f2e"/>
+<path d="M162 215c-46 10-57 50-44 105l27 94h106l-9-123c-4-50-34-84-80-76z" fill="#f8e7d3"/>
+<path d="M238 269c28 3 58 33 71 66l-26 20-62-48z" fill="#b97958"/>
+<path d="M313 312c3-40 26-67 64-66 38 1 60 29 59 68l-8 100H303z" fill="#176c6a"/>
+<ellipse cx="365" cy="233" rx="37" ry="42" fill="#d39c75"/>
+<path d="M326 227c2-33 18-49 45-49 27 0 43 22 38 49-22-4-37-15-42-29-9 17-24 26-41 29z" fill="#2e2928"/>
+<path d="M312 333c-37 3-61 27-74 55l30 16 73-31z" fill="#d39c75"/>
+<path d="M102 414h341" stroke="#315e5e" stroke-width="10" stroke-linecap="round"/>
+<path d="M65 271c-8-31-1-55 17-72m-17 72c-21-18-25-39-26-58m26 58c4 19 7 34 7 50" fill="none" stroke="#428c75" stroke-width="9" stroke-linecap="round"/>
+<path d="M434 234c0-35 6-60 30-77m-30 77c-22-15-34-35-35-59m35 59c3 18 5 32 4 53" fill="none" stroke="#428c75" stroke-width="9" stroke-linecap="round"/>
+</svg>

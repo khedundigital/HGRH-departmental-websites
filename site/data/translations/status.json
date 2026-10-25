@@ -1,0 +1,12 @@
+{
+  "defaultLanguage": "en",
+  "languages": {
+    "en": { "interface": "available", "hospitalApproval": "not granted" },
+    "zu": {
+      "interface": "not published",
+      "translationReview": "not started",
+      "clinicalReview": "not started"
+    }
+  },
+  "policy": "Only publish a language when every route and safety warning is translated and approved by a qualified translator and departmental clinical reviewer."
+}

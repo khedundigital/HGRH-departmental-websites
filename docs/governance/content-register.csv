@@ -1,0 +1,9 @@
+id,route,content,status,source_or_owner,reviewer_needed,publish_rule
+C-001,all,unofficial demonstration warning,approved_for_demo,user instruction,owner,always visible
+C-002,all,hospital name and official verification link,source-backed,official KZN Health page,hospital communications,link to source
+C-003,paediatrics/services.html,broad paediatric service category,source-backed,official KZN Health services list,department lead,do not infer scope
+C-004,paediatrics/admissions.html,admissions process specifics,unverified,prototype only,admissions lead,placeholder only
+C-005,paediatrics/preparation.html,visit preparation prompts,unreviewed generic,project drafting,clinical and admissions reviewers,verify before operational use
+C-006,paediatrics/faqs.html,operational FAQ answers,unverified,prototype only,department lead,explain verification requirement
+C-007,all,isiZulu patient content,not supplied,none,qualified translator plus clinical reviewer,do not display as complete
+C-008,obgyn,department content,awaiting questionnaire,owner,department lead,do not publish
