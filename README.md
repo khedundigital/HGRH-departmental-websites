@@ -10,7 +10,7 @@ The earlier clinic timetable and admission sequence appear as **historical proto
 
 ## Test
 
-Run `python3 tests/check_site.py`. It checks routes, local links and fragments, landmarks, the warning, no forms or external CDN dependency, and publish isolation basics. Also inspect in a browser at mobile, tablet and desktop widths, keyboard focus, print preview and JavaScript disabled. The site should render and navigate directly from files.
+Run `python3 tests/check_site.py`. It checks routes, local links and fragments, landmarks, the warning, no forms or external CDN dependency, and publish isolation basics. After deployment run `python3 tests/check_live.py` to fetch every route and printable PDF and confirm working documents stay unpublished. Also inspect in a browser at mobile, tablet and desktop widths, keyboard focus, print preview and JavaScript disabled. The site should render and navigate directly from files.
 
 ## Deployment and rollback
 
