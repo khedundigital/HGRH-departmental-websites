@@ -1,3 +1,7 @@
 # ADR 001 — static, publish-isolated demonstration
 
 25 October 2026. Plain HTML/CSS and optional vanilla JS are sufficient for this informational demonstration. All navigation, warnings, FAQ content and print views render without JS. Files in `site/` are directly editable and form the complete distributable website; no runtime server or build command is needed. Project-relative URLs allow GitHub Pages repository-subpath hosting and ZIP export. Repeated static header/footer markup is deliberate to preserve no-JS navigation. CSS tokens and reusable classes provide shared design. No database, analytics, form processing, booking or external asset CDN. `site/data/translations/` records language review status; English is the only displayed interface until isiZulu receives qualified review. GitHub Actions uploads `site/` only, excluding source drafts, governance files and the old prototype. The tradeoff is manual consistency checks across static headers; `tests/check_site.py` enforces key links and warnings.
+
+## 25 October 2026 extension
+
+The second iteration adds source-backed hospital-wide location and contact details, a labelled legacy clinic concept area, and a curated external education route. Official hospital facts carry source links and a check date, while departmental clinic names remain design examples pending approval. O&G receives a schema and questionnaire mapping only. `site/` remains the only deployed directory; no new build system or data collection was introduced.

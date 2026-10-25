@@ -5,9 +5,18 @@ GCIS-03,https://www.gcis.gov.za/guidelines/website/design,2026-10-25,official SA
 GCIS-04,https://www.gcis.gov.za/guidelines/website/information-architecture,2026-10-25,official SA government,task-led shallow navigation and breadcrumbs,No claim of formal compliance
 GCIS-05,https://www.gcis.gov.za/guidelines/website/navigation,2026-10-25,official SA government,descriptive links and keyboard focus,No site search until accurate results can be provided
 GCIS-06,https://www.gcis.gov.za/guidelines/website/website-accessibility,2026-10-25,official SA government,accessibility review,Formal audit pending
-KZN-01,https://www.kznhealth.gov.za/provincial-hospitals/harry-gwala-hospital/,2026-10-25,official provincial health,hospital identity and official verification destination,Direct page timed out in research browser; search indexed excerpt consulted
+KZN-01,https://www.kznhealth.gov.za/provincial-hospitals/harry-gwala-hospital/,2026-10-25,official provincial health,hospital identity and official verification destination,Live official page returned HTTP 200 during 25 October 2026 recheck; hospital-wide facts only
 KZN-02,https://www.kznhealth.gov.za/provincial-hospitals/harry-gwala-hospital/harry-gwala-services/,2026-10-25,official provincial health,confirms paediatric service category only,No detailed departmental pathways inferred
 NHS-01,https://service-manual.nhs.uk/design-system,2026-10-25,international design system,accessible component patterns,Patterns only; no NHS branding
 GOVUK-01,https://design-system.service.gov.uk/,2026-10-25,international design system,plain language and reusable patterns,Patterns only; no GOV.UK branding
 GITHUB-01,https://github.com/actions/starter-workflows/blob/main/pages/static.yml,2026-10-25,official GitHub,static Pages workflow and action versions,Upload path changed to site only
 GITHUB-02,https://docs.github.com/en/rest/pages/pages,2026-10-25,official GitHub,workflow build_type Pages configuration,API site state and live behavior verified separately
+KZN-03,https://www.kznhealth.gov.za/provincial-hospitals/harry-gwala-hospital/,2026-10-25,official provincial health,physical address main telephone PRO number and general visiting times,Confirm Paediatrics-specific pathways and visiting rules with department
+WHO-01,https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding,2026-10-25,official WHO,caregiver feeding education link,External general guidance does not replace individual care
+WHO-02,https://www.who.int/tools/your-life-your-health/life-phase/newborns-and-children-under-5-years/feeding-an-infant-or-young-child,2026-10-25,official WHO,caregiver feeding information link,Check publisher for updates
+WHO-03,https://www.who.int/health-topics/child-health,2026-10-25,official WHO,child health portal link,Portal not local hospital policy
+WHO-04,https://www.who.int/publications/i/item/9789240112698,2026-10-25,official WHO,Essential newborn care course second edition,For health workers; local protocols govern practice
+WHO-05,https://www.who.int/publications/i/item/9789240058262/,2026-10-25,official WHO,preterm or low birth weight infant guideline,For health workers; local protocols govern practice
+WHO-06,https://www.who.int/publications/i/item/9789240113732,2026-10-25,official WHO,infant and young child feeding model chapter second edition,For health workers; check current edition
+WHO-07,https://www.who.int/publications/i/item/978-92-4-154837-3,2026-10-25,official WHO,Pocket Book of Hospital Care for Children second edition,2013 edition; check current local guidance
+WHO-08,https://www.who.int/publications/m/item/integrated-management-of-childhood-illness---chart-booklet-%28march-2014%29,2026-10-25,official WHO,IMCI chart booklet,2014 edition; check current local guidance

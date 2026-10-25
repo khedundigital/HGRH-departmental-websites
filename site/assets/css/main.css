@@ -119,10 +119,10 @@ svg {
 }
 .site-nav a {
   display: block;
-  padding: 0.68rem 0.78rem;
+  padding: 0.68rem 0.48rem;
   border-radius: 0.6rem;
   text-decoration: none;
-  font-size: 0.91rem;
+  font-size: 0.82rem;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -461,7 +461,7 @@ p {
   font-size: 0.85rem;
   color: #d4e3e2;
 }
-@media (max-width: 920px) {
+@media (max-width: 1300px) {
   .header-inner {
     align-items: flex-start;
     flex-direction: column;
@@ -471,6 +471,8 @@ p {
     width: 100%;
     overflow-x: auto;
   }
+}
+@media (max-width: 920px) {
   .hero-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -532,4 +534,40 @@ p {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+.status-pill {
+  display: inline-block;
+  background: var(--warning-bg);
+  color: #6d4305;
+  border: 1px solid #d6a24b;
+  border-radius: 99px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.resource-card {
+  display: flex;
+  flex-direction: column;
+}
+.resource-card a {
+  margin-top: auto;
+  font-weight: 800;
+}
+.resource-meta {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-top: 0.8rem;
+}
+.number-link {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+address {
+  font-style: normal;
+  font-size: 1.08rem;
+  font-weight: 650;
+  margin-bottom: 1rem;
 }

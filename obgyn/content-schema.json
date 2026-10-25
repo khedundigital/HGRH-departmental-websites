@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/khedundigital/HGRH-departmental-websites/obgyn/content-schema.json",
+  "title": "Future O&G departmental content record",
+  "description": "A governance schema only. It is not patient content and does not authorise publication.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["department", "questionnaireVersion", "status", "reviewers", "sections"],
+  "properties": {
+    "department": { "const": "obgyn" },
+    "questionnaireVersion": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["draft", "department-review", "approved-for-demo", "approved-for-publication"] },
+    "reviewers": {
+      "type": "object",
+      "required": ["clinical", "operations", "communications"],
+      "properties": {
+        "clinical": { "type": "string", "minLength": 1 },
+        "operations": { "type": "string", "minLength": 1 },
+        "communications": { "type": "string", "minLength": 1 },
+        "language": { "type": "string" },
+        "accessibility": { "type": "string" }
+      }
+    },
+    "sections": {
+      "type": "object",
+      "required": ["overview", "access", "services", "preparation", "faqs"],
+      "properties": {
+        "overview": { "$ref": "#/$defs/claims" },
+        "access": { "$ref": "#/$defs/claims" },
+        "services": { "$ref": "#/$defs/claims" },
+        "preparation": { "$ref": "#/$defs/claims" },
+        "faqs": { "$ref": "#/$defs/claims" }
+      }
+    }
+  },
+  "$defs": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim", "source", "status", "reviewedOn", "reviewDue"],
+        "properties": {
+          "claim": { "type": "string", "minLength": 1 },
+          "source": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["unreviewed", "verified", "approved"] },
+          "reviewedOn": { "type": "string", "format": "date" },
+          "reviewDue": { "type": "string", "format": "date" },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

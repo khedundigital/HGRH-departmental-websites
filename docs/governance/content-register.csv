@@ -7,3 +7,8 @@ C-005,paediatrics/preparation.html,visit preparation prompts,unreviewed generic,
 C-006,paediatrics/faqs.html,operational FAQ answers,unverified,prototype only,department lead,explain verification requirement
 C-007,all,isiZulu patient content,not supplied,none,qualified translator plus clinical reviewer,do not display as complete
 C-008,obgyn,department content,awaiting questionnaire,owner,department lead,do not publish
+C-009,paediatrics/contact.html,hospital-wide address and map search,source-backed,official KZN Health hospital page,hospital communications,verify changes periodically; no entrance claim
+C-010,paediatrics/contact.html,main hospital and PRO telephone numbers,source-backed,official KZN Health hospital page,hospital communications,do not relabel as paediatrics booking or emergency
+C-011,paediatrics/contact.html,general hospital visiting hours,source-backed with scope caveat,official KZN Health hospital page,paediatrics ward lead,confirm ward-specific policy before use
+C-012,paediatrics/services.html,earlier prototype clinic examples,unverified concepts,prototype archive,paediatrics lead,visibly unconfirmed; no schedule room doctor or referral claim
+C-013,paediatrics/education.html,WHO resource links,source-backed links,WHO publication pages,clinical education lead,link to publisher; review editions and audience

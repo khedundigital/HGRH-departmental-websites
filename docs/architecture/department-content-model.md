@@ -1,0 +1,7 @@
+# Department content architecture
+
+The public artifact is the `site/` tree. Each approved department gets its own static HTML directory using project-relative links, the shared design tokens, print CSS and an always-visible status banner. `site/data/departments.json` lists release status; it is metadata, not a source of clinical truth. The root page links only to published departmental routes.
+
+Content claims pass through four states: **source captured → operational/clinical verification → communications/language review → approved publication**. Each claim must have a named owner, original source, review date and next review date in `docs/governance/content-register.csv`. An official external publication may support a hospital-wide fact without approving a Paediatrics or O&G service pathway. Draft questionnaires and signatures stay outside the public Git repository; the content register stores status, not sensitive evidence. The O&G schema in `obgyn/content-schema.json` provides future field structure but contains no responses. O&G HTML remains absent until questionnaire responses and named reviews are complete.
+
+The site's English interface is still an unofficial demonstration. The future language architecture must support complete per-route translations, `lang` attributes and linked content parity; a partial language selector is prohibited. External education resources link to publisher pages, with audience and edition dates; the site does not copy clinical books or imply publisher endorsement.

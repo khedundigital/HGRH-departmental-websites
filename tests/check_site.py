@@ -7,7 +7,12 @@ import json
 import sys
 
 SITE = Path(__file__).resolve().parents[1] / 'site'
-ROUTES = ['index.html', 'paediatrics/index.html', 'paediatrics/admissions.html', 'paediatrics/services.html', 'paediatrics/preparation.html', 'paediatrics/faqs.html']
+ROUTES = [
+    'index.html', 'paediatrics/index.html', 'paediatrics/admissions.html',
+    'paediatrics/services.html', 'paediatrics/preparation.html',
+    'paediatrics/education.html', 'paediatrics/faqs.html',
+    'paediatrics/contact.html',
+]
 WARNING = 'UNOFFICIAL DEMONSTRATION'
 
 class Links(HTMLParser):
@@ -54,9 +59,18 @@ for route in ROUTES:
 status=json.loads((SITE/'data/translations/status.json').read_text())
 if status['languages']['zu']['interface']!='not published': errors.append('isiZulu status mismatch')
 if (SITE/'obgyn').exists(): errors.append('O&G public route exists')
+if '+27 (0) 33 395 4911' not in (SITE/'paediatrics/contact.html').read_text():
+    errors.append('official hospital telephone missing')
+if 'Lot 89, Selby Msimang Road' not in (SITE/'paediatrics/contact.html').read_text():
+    errors.append('official hospital address missing')
+if '9789240112698' not in (SITE/'paediatrics/education.html').read_text():
+    errors.append('WHO newborn resource missing')
+for path in SITE.rglob('*.html'):
+    if '395 4703' in path.read_text() or '3954703' in path.read_text():
+        errors.append(f'unverified prototype phone number in {path.relative_to(SITE)}')
 for path in SITE.rglob('*'):
     if path.is_file() and path.suffix in ('.md','.env'):
         errors.append(f'non-public file inside site: {path.relative_to(SITE)}')
 if errors:
     print('\n'.join('FAIL '+e for e in errors),file=sys.stderr); sys.exit(1)
-print(f'PASS: {len(ROUTES)} routes, local links, warnings, static safety and language status')
+print(f'PASS: {len(ROUTES)} routes, local links, warnings, source-backed contacts, static safety and language status')
