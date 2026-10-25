@@ -5,5 +5,5 @@
 - [x] Review cited official and design-system guidance.
 - [x] Build static Paediatrics demonstration.
 - [x] Run local route, warning, link, browser-path, keyboard-disclosure and publish-scope checks; formal accessibility audit remains.
-- [ ] Commit, push and verify Pages.
+- [x] Commit, push and verify Pages on the target repository.
 - [ ] O&G pages: deferred pending completed questionnaire and approval.

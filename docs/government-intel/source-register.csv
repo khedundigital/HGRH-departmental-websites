@@ -10,3 +10,4 @@ KZN-02,https://www.kznhealth.gov.za/provincial-hospitals/harry-gwala-hospital/ha
 NHS-01,https://service-manual.nhs.uk/design-system,2026-10-25,international design system,accessible component patterns,Patterns only; no NHS branding
 GOVUK-01,https://design-system.service.gov.uk/,2026-10-25,international design system,plain language and reusable patterns,Patterns only; no GOV.UK branding
 GITHUB-01,https://github.com/actions/starter-workflows/blob/main/pages/static.yml,2026-10-25,official GitHub,static Pages workflow and action versions,Upload path changed to site only
+GITHUB-02,https://docs.github.com/en/rest/pages/pages,2026-10-25,official GitHub,workflow build_type Pages configuration,API site state and live behavior verified separately
